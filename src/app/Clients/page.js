@@ -1,15 +1,18 @@
 import Footer from "@/components/layout/footer/Footer";
 import Header from "@/components/layout/header/Header";
-import Brands1 from "@/components/sections/brands/Brands1";
-import Contact2 from "@/components/sections/contacts/Contact2";
+import About3 from "@/components/sections/about/About3";
+import PricingPlan2 from "@/components/sections/pricing-plan/PricingPlan2";
 import Cta from "@/components/sections/cta/Cta";
+import Faq2 from "@/components/sections/faq/Faq2";
+import Features from "@/components/sections/features/Features";
 import HeroInner from "@/components/sections/hero/HeroInner";
-import PricingPlan from "@/components/sections/pricing-plan/PricingPlan";
-import ServicesPrimary from "@/components/sections/services/ServicesPrimary";
+import Team1 from "@/components/sections/teams/Team1";
+import Testimonials2 from "@/components/sections/testimonials/Testimonials2";
 import BackToTop from "@/components/shared/others/BackToTop";
 import HeaderSpace from "@/components/shared/others/HeaderSpace";
 import ClientWrapper from "@/components/shared/wrappers/ClientWrapper";
-export default function Services() {
+
+export default function About() {
 	return (
 		<div>
 			<BackToTop />
@@ -19,9 +22,8 @@ export default function Services() {
 				<div id="smooth-content">
 					<main>
 						<HeaderSpace />
-						<HeroInner title={"Services"} text={"Services"} />
-						<ServicesPrimary />
-						<Contact2 />
+						<HeroInner title={"Our Clients"} text={"Our valued clients"} />
+						<Team1/>
 						<Cta />
 					</main>
 					<Footer />

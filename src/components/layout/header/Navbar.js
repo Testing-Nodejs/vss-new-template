@@ -5,20 +5,20 @@ import Image from "next/image";
 import Link from "next/link";
 
 const Navbar = ({ headerType, isStickyHeader }) => {
-	const makeActiveLink = useActiveLink();
-	const navItems = getNavItems();
-	const homeNav = makeActiveLink(navItems[0]);
-	const pagesNav = makeActiveLink(navItems[1]);
-	const serviceNav = makeActiveLink(navItems[2]);
-	const portfolioNav = makeActiveLink(navItems[3]);
-	const blogNav = makeActiveLink(navItems[4]);
-	const contactNav = makeActiveLink(navItems[5]);
+  const makeActiveLink = useActiveLink();
+  const navItems = getNavItems();
+  const homeNav = makeActiveLink(navItems[0]);
+  const pagesNav = makeActiveLink(navItems[1]);
+  const serviceNav = makeActiveLink(navItems[2]);
+  const portfolioNav = makeActiveLink(navItems[3]);
+  const blogNav = makeActiveLink(navItems[4]);
+  const contactNav = makeActiveLink(navItems[5]);
 
-	return (
-		<div className="menu-area d-none d-lg-inline-flex align-items-center">
-			<nav id="mobile-menu" className="mainmenu">
-				<ul>
-					<li
+  return (
+    <div className="menu-area d-none d-lg-inline-flex align-items-center">
+      <nav id="mobile-menu" className="mainmenu">
+        <ul>
+          {/* <li
 						className={`has-dropdown ${
 							homeNav?.isActive ? "current-menu-ancestor" : ""
 						}`}
@@ -243,16 +243,35 @@ const Navbar = ({ headerType, isStickyHeader }) => {
 								  ))
 								: ""}
 						</ul>
-					</li>
-					<li className={contactNav?.isActive ? "current-menu-ancestor" : ""}>
-						<Link href={contactNav?.path ? contactNav?.path : "#"}>
-							{contactNav?.name ? contactNav?.name : "Contact"}
-						</Link>
-					</li>
-				</ul>
-			</nav>
-		</div>
-	);
+					</li> */}
+          <li className="">
+            <Link href="/">Home</Link>
+          </li>
+		  <li className="">
+            <Link href="/whyus">Why Us</Link>
+          </li>
+		  <li className="">
+            <Link href="/Clients">Our Client</Link>
+          </li>
+		  <li className="">
+            <Link href="/portfolios">Portfolio</Link>
+          </li>
+		  <li className="">
+            <Link href="/Products">Our Products</Link>
+          </li>
+		  <li className="">
+            <Link href="/services">Services</Link>
+          </li>
+		  <li className="">
+            <Link href="/contact">Contact Us</Link>
+          </li>
+		  <li className="">
+            <Link href="/careers">Career</Link>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  );
 };
 
 export default Navbar;

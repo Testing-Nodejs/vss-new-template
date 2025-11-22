@@ -95,7 +95,7 @@ const Contact3 = () => {
 					</div>
 					<div className="col-lg-6">
 						<div className="map-area wow fadeInUp" data-wow-delay=".3s">
-							<iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d316440.5712687838!2d-74.01091796224334!3d40.67186885683901!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbd!4v1745918398047!5m2!1sen!2sbd"></iframe>
+							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3898.2105466261214!2d76.62482587379856!3d12.301603329215782!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3baf7abaae3db01d%3A0x871e15d751f9a5d9!2sVeriteam%20Software!5e0!3m2!1sen!2sin!4v1763814978788!5m2!1sen!2sin"></iframe>
 						</div>
 					</div>
 				</div>

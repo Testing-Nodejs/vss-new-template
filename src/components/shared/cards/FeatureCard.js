@@ -7,7 +7,7 @@ const FeatureCard = ({ feature, type, idx }) => {
 					<i className={icon}></i>
 				</div>
 				<h4 className="title">{title}</h4>
-				<p className="desc">{desc}</p>
+				<p className="desc" style={{textAlign: "justify"}}>{desc}</p>
 			</div>
 		</div>
 	);

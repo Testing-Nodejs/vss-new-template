@@ -1,100 +1,114 @@
 [
-	{
-		"id": 1,
-		"name": "Eade Marren",
-		"desig": "Chief Executive",
-		"img": "/images/team/team-1.webp",
-		"imgLarge": "/images/team/team-1-big.webp"
-	},
-	{
-		"id": 2,
-		"name": "Savannah Ngueen",
-		"desig": "Operations Head",
-		"img": "/images/team/team-2.webp",
-		"imgLarge": "/images/team/team-2-big.webp"
-	},
-	{
-		"id": 3,
-		"name": "Kristin Watson",
-		"desig": "Marketing Lead",
-		"img": "/images/team/team-3.webp",
-		"imgLarge": "/images/team/team-3-big.webp"
-	},
-	{
-		"id": 4,
-		"name": "Darlene Robertson",
-		"desig": "Business Director",
-		"img": "/images/team/team-4.webp",
-		"imgLarge": "/images/team/team-4-big.webp"
-	},
-	{
-		"id": 5,
-		"name": "Darlene Robertson",
-		"desig": "Business Director",
-		"img": "/images/team/team-5.webp",
-		"imgLarge": "/images/team/team-1-big.webp"
-	},
-	{
-		"id": 6,
-		"name": "Kristin Watson",
-		"desig": "Marketing Lead",
-		"img": "/images/team/team-6.webp",
-		"imgLarge": "/images/team/team-2-big.webp"
-	},
-	{
-		"id": 7,
-		"name": "Savannah Nguyen",
-		"desig": "Operations Head",
-		"img": "/images/team/team-7.webp",
-		"imgLarge": "/images/team/team-3-big.webp"
-	},
-	{
-		"id": 8,
-		"name": "Eade Marren",
-		"desig": "Chief Executive",
-		"img": "/images/team/team-8.webp",
-		"imgLarge": "/images/team/team-4-big.webp"
-	},
-	{
-		"id": 9,
-		"name": "Kristin Watson",
-		"desig": "Marketing Lead",
-		"img": "/images/team/team-3.webp",
-		"imgLarge": "/images/team/team-1-big.webp"
-	},
-	{
-		"id": 10,
-		"name": "Darlene Robertson",
-		"desig": "Business Director",
-		"img": "/images/team/team-4.webp",
-		"imgLarge": "/images/team/team-2-big.webp"
-	},
-	{
-		"id": 11,
-		"name": "Darlene Robertson",
-		"desig": "Business Director",
-		"img": "/images/team/team-5.webp",
-		"imgLarge": "/images/team/team-3-big.webp"
-	},
-	{
-		"id": 12,
-		"name": "Kristin Watson",
-		"desig": "Marketing Lead",
-		"img": "/images/team/team-6.webp",
-		"imgLarge": "/images/team/team-4-big.webp"
-	},
-	{
-		"id": 13,
-		"name": "Savannah Nguyen",
-		"desig": "Operations Head",
-		"img": "/images/team/team-7.webp",
-		"imgLarge": "/images/team/team-1-big.webp"
-	},
-	{
-		"id": 14,
-		"name": "Eade Marren",
-		"desig": "Chief Executive",
-		"img": "/images/team/team-8.webp",
-		"imgLarge": "/images/team/team-2-big.webp"
-	}
+  {
+    "id": 1,
+    "name": "Laundrexx",
+    "desig": "Preminum Laundry Service In Chennai",
+    "img": "/images/team/Laundrexx.png",
+    "imgLarge": "/images/team/Laundrexx.png",
+    "link": "https://lxapp.in/"
+  },
+  {
+    "id": 2,
+    "name": "Global Cloud",
+    "desig": "IT company headquartered in Mysore",
+    "img": "/images/team/GlobalCloud.png",
+    "imgLarge": "/images/team/GlobalCloud.png",
+    "link": "https://globalcloud.org.in/"
+  },
+  {
+    "id": 3,
+    "name": "Zeus Biotech",
+    "desig": "Biotechnology for Animal Health & Nutrition",
+    "img": "/images/team/Zeus.png",
+    "imgLarge": "/images/team/Zeus.png",
+    "link": "https://www.zeusbiotech.com/"
+  },
+  {
+    "id": 4,
+    "name": "JK Grand Arena",
+    "desig": "JK Grand Arena Event Resort, Bangalore",
+    "img": "/images/team/JKGrand.png",
+    "imgLarge": "/images/team/JKGrand.png",
+    "link": "https://jkgrandarena.com/"
+  },
+  {
+    "id": 5,
+    "name": "MC Resorts",
+    "desig": "Best Wildlife Resort",
+    "img": "/images/team/mcresort.png",
+    "imgLarge": "/images/team/mcresort.png",
+    "link": "https://www.mcresorts.in/"
+  },
+  {
+    "id": 6,
+    "name": "Peenya Finecomp",
+    "desig": "Biotechnology for Animal Health & Nutrition",
+    "img": "/images/team/Peenya.png",
+    "imgLarge": "/images/team/Peenya.png",
+    "link": "https://peenyafinecomp.co.in/"
+  },
+  {
+    "id": 7,
+    "name": "Chrome Mahindra",
+    "desig": "Mahindra & Mahindra is the flagship company of the Mahindra Group",
+    "img": "/images/team/mahindra.png",
+    "imgLarge": "/images/team/mahindra.png",
+    "link": "https://www.chromemahindra.com/"
+  },
+  {
+    "id": 8,
+    "name": "Indian Media Book",
+    "desig": "Indian Media Book",
+    "img": "/images/team/indianmediabook.png",
+    "imgLarge": "/images/team/indianmediabook.png",
+    "link": "https://indianmediabook.in/"
+  },
+  {
+    "id": 9,
+    "name": "Dreamline Cargo",
+    "desig": "Goods safely to destinations with our great Road fright services",
+    "img": "/images/team/Dreamline.png",
+    "imgLarge": "/images/team/Dreamline.png",
+    "link": "https://dreamlinecargo.com/index.aspx"
+  },
+  {
+    "id": 10,
+    "name": "Ascend Travel Solutions",
+    "desig": "Ascend Travel Solutions",
+    "img": "/images/team/Ascent.png",
+    "imgLarge": "/images/team/Ascent.png",
+    "link": "https://ascendtravelsolutions.in/"
+  },
+  {
+    "id": 11,
+    "name": "Air Journey",
+    "desig": "Air Journey",
+    "img": "/images/team/Airjurney.png",
+    "imgLarge": "/images/team/Airjurney.png",
+    "link": "https://airjourney.in/"
+  },
+  {
+    "id": 11,
+    "name": "Annannya",
+    "desig": "Annannya",
+    "img": "/images/team/noimage.jpg",
+    "imgLarge": "/images/team/noimage.jpg",
+    "link": "https://www.annannya.com/login.aspx?cmpy=1"
+  },
+  {
+    "id": 12,
+    "name": "Sera lachi Monastery",
+    "desig": "Sera lachi Monastery",
+    "img": "/images/team/seralachi.jpg",
+    "imgLarge": "/images/team/seralachi.jpg",
+    "link": "https://www.seralachi-monastery.org/home.aspx"
+  },
+  {
+    "id": 13,
+    "name": "The Kings Kastle",
+    "desig": "The Kings Kastle",
+    "img": "/images/team/noimage.jpg",
+    "imgLarge": "/images/team/noimage.jpg",
+    "link": "https://thekingskastle.com/"
+  }
 ]

@@ -19,14 +19,14 @@ const ServiceCard4 = ({ service, idx, lastItem }) => {
 			</div>
 			<div className="service-content">
 				<h4 className="title">
-					<Link href={`/services/${id}`}>{title}</Link>
+					<Link href={`#`}>{title}</Link>
 				</h4>
-				<p className="desc">{desc}</p>
-				<ButtonPrimary
+				<p className="desc" style={{textAlign: "justify"}}>{desc}</p>
+				{/* <ButtonPrimary
 					text={"Learn More"}
 					url={`/services/${id}`}
 					isTextBtn={true}
-				/>
+				/> */}
 			</div>
 		</div>
 	);
