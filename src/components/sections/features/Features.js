@@ -14,7 +14,7 @@ const Features = ({ type }) => {
       icon: "fa fa-tasks",
     },
     {
-      title: "OUR TEAM",
+      title: "OUR TEAMS",
       desc: "At Veriteam Software, our strength lies in our people—a dynamic mix of young talent and seasoned professionals who bring passion, expertise, and innovation to every engagement. We define ourselves by three core qualities: confidence, competence, and care. Our team actively explores opportunities around the world and grows alongside our clients, fostering long-term relationships built on trust, collaboration, and shared success. We believe in connecting with businesses and individuals globally, creating partnerships that last.",
       icon: "fa fa-users-cog",
     },

@@ -1,0 +1,27 @@
+.imageRow {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 equal columns */
+  gap: 20px; /* space between images */
+  align-items: center;
+  justify-items: center;
+  margin-top: 20px;
+}
+
+.imageRow :global(img) {
+  width: 100%;       /* make all images scale equally */
+  max-width: 120px;   /* adjust as needed */
+  height: auto;
+  object-fit: contain;
+}
+
+@media (max-width: 768px) {
+  .imageRow {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .imageRow {
+    grid-template-columns: 1fr;
+  }
+}

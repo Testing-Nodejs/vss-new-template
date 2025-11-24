@@ -17,7 +17,7 @@ const ServicesPrimary = () => {
       id: 2,
       title: "Our Team",
       iconName: "fa fa-users",
-      desc: "A young, talented, and experienced group driven by confidence, competence, and care. We grow with our clients through long-term relationships, global exposure, and continuous innovation.",
+      desc: "A young, talented, and experienced group driven by confidence, competence, and care. We grow with our clients through long-term relationships, global exposure, and continuous innovation. Our Services are Software Development Team, BPO & Support Team, Medical Billing & Support Team, Business Development  Team, Administrative Team",
     },
     {
       id: 3,

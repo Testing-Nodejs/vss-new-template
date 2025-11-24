@@ -43,8 +43,13 @@ const ContactTop = () => {
               <h3 className="contact-title">Email us</h3>
               <ul className="contact-list">
                 <li>
-                  <Link href="mailto:idris.ahmed@vssitcompany.com">
-                    idris.ahmed@vssitcompany.com
+                  <Link href="mailto:info@vssitcompany.com">
+                    info@vssitcompany.com
+                  </Link>
+                </li>
+                <li>
+                  <Link href="mailto:sales@vssitcompany.com">
+                    sales@vssitcompany.com
                   </Link>
                 </li>
                 <li>
@@ -70,6 +75,9 @@ const ContactTop = () => {
                 </li>
                 <li>
                   <Link href="tel:919945273806">+91 9945273806</Link>
+                </li>
+                <li>
+                  <Link href="tel:919986038769">+91 9986038769</Link>
                 </li>
               </ul>
             </div>
