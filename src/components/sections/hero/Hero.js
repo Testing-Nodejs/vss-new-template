@@ -33,7 +33,7 @@ const Hero = () => {
           <div className="banner-img">
             <Image
               data-speed="0.8"
-              src="/images/hero/banner.png"
+              src="/images/hero/Banner.png"
               alt=""
               width={945}
               height={793}
