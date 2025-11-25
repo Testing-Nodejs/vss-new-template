@@ -37,7 +37,7 @@ const Footer = () => {
                 className="footer-widget widget-nav-menu wow fadeInUp"
                 data-wow-delay=".3s"
               >
-                <h5 className="title">Menus</h5>
+                <h5 className="title">Choose Us</h5>
                 <ul>
                   <li>
                     <Link href="/">Home</Link>
@@ -46,7 +46,7 @@ const Footer = () => {
                     <Link href="/whyus">Why Us</Link>
                   </li>
                   <li>
-                    <Link href="/Clients">Our Client</Link>
+                    <Link href="/Clients">Our Clients</Link>
                   </li>
                   <li>
                     <Link href="/Products">Our Products</Link>
@@ -59,7 +59,7 @@ const Footer = () => {
                 className="footer-widget widget-nav-menu wow fadeInUp"
                 data-wow-delay=".5s"
               >
-                <h5 className="title">Resources</h5>
+                <h5 className="title">Know More</h5>
                 <ul>
                   <li>
                     <Link href="/services">Services</Link>
@@ -81,7 +81,7 @@ const Footer = () => {
                 className="footer-widget widget-nav-menu wow fadeInUp"
                 data-wow-delay=".5s"
               >
-                <h5 className="title">Find Us</h5>
+                <h5 className="title">Head Quarter</h5>
                 <ul>
                   <li>
                     <Link href="#">

@@ -54,7 +54,7 @@ const About3 = ({ type }) => {
                 <span className="sub-title wow fadeInUp" data-wow-delay=".3s">
                   <i className="tji-box"></i>Get to Know Us
                 </span>
-                <h2 className="sec-title title-anim">Veriteam Software Solution</h2>
+                <h2 className="sec-title title-anim">Veriteam Software Solutions</h2>
               </div>
             </div>
             <div className="about-bottom-area">
@@ -62,7 +62,7 @@ const About3 = ({ type }) => {
                 className="mission-vision-box wow fadeInLeft"
                 data-wow-delay=".5s"
               >
-                <h4 className="title">About Us</h4>
+                <h4 className="title">About The Company</h4>
                 <p className="desc" style={{textAlign: "justify"}}>
                   Veriteam Software Solutions Private Limited provides
                   consulting and IT services to clients globally - as partners
@@ -86,9 +86,9 @@ const About3 = ({ type }) => {
                 </p>
               </div>
             </div>
-            <div className="about-btn-area wow fadeInUp" data-wow-delay=".5s">
+            {/* <div className="about-btn-area wow fadeInUp" data-wow-delay=".5s">
               <ButtonPrimary text={"Learn More About Us"} url={"/about"} />
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

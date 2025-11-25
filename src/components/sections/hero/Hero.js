@@ -19,9 +19,9 @@ const Hero = () => {
                   <i className="tji-arrow-right-big"></i>
                 </span>
               </Link>
-              <div className="banner-desc">
+              <div className="banner-desc" style={{fontSize: "18px", color: "orange"}}>
                 VSS — Empowering Businesses with Intelligent Technology &
-                Crafting Smarter Digital Experiences.
+                Crafting Smarter Digital Experience.
               </div>
             </div>
           </div>
@@ -33,7 +33,7 @@ const Hero = () => {
           <div className="banner-img">
             <Image
               data-speed="0.8"
-              src="/images/hero/hero-img.webp"
+              src="/images/hero/banner.jpeg"
               alt=""
               width={945}
               height={793}
@@ -78,9 +78,17 @@ const Hero = () => {
                 className="customers-number wow fadeInUp"
                 data-wow-delay=".5s"
               >
-                20+
+                23+
               </div>
-              <h6 className="customers-text wow fadeInUp" data-wow-delay=".5s">
+              <h6
+                style={{
+                  color: "#ec9336",
+                  fontWeight: "900",
+                  fontSize: "20px",
+                }}
+                className="customers-text wow fadeInUp"
+                data-wow-delay=".5s"
+              >
                 Years Of Industry Experience
               </h6>
             </div>

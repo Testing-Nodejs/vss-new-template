@@ -7,6 +7,7 @@ const ButtonPrimary = ({ className, text, isTextBtn, url, type, iconName }) => {
 				<button
 					type={type ? type : "submit"}
 					className={`tj-primary-btn ${className ? className : ""}`}
+					style={{background: "orange"}}
 				>
 					<span className="btn-text">
 						<span>{text}</span>
@@ -21,6 +22,7 @@ const ButtonPrimary = ({ className, text, isTextBtn, url, type, iconName }) => {
 					className={`${isTextBtn ? "text-btn" : "tj-primary-btn"} ${
 						className ? className : ""
 					}`}
+					style={{background: "orange"}}
 				>
 					<span className="btn-text">
 						<span>{text}</span>

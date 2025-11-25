@@ -22,7 +22,7 @@ export default function About() {
 				<div id="smooth-content">
 					<main>
 						<HeaderSpace />
-						<HeroInner title={"About Our Company"} text={"Just a few words"} />
+						<HeroInner title={"About Our Brand"} text={"Just a few words"} />
 						<Features type={2} />
 						<About3 type={2} />
 						{/* <Brands1 type={2} /> */}

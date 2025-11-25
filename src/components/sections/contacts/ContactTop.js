@@ -74,10 +74,10 @@ const ContactTop = () => {
                   <Link href="tel:919986019715">+91 9986019715</Link>
                 </li>
                 <li>
-                  <Link href="tel:919945273806">+91 9945273806</Link>
+                  <Link href="tel:919845468715">+91 9845468715</Link>
                 </li>
                 <li>
-                  <Link href="tel:919986038769">+91 9986038769</Link>
+                  <Link href="tel:919880796233">+91 9880796233</Link>
                 </li>
               </ul>
             </div>

@@ -1,10 +1,12 @@
 import modifyNumber from "@/libs/modifyNumber";
+import { Colors } from "chart.js";
 import Image from "next/image";
 
 const History1 = () => {
   const history = [
     {
       title: "ALMS-POS v3.0",
+      colors: "red",
       desc: "The Active Laundry Management Point of Sale is enabled by very handy functionality and features that would decrease effort. Simple and laid on the line functions that would shorten day to day order management in your laundry. It comes with many useful tools to manage a laundry of whatever size.",
       points: [
         "Multiple Stores Access Facility",
@@ -20,6 +22,7 @@ const History1 = () => {
     },
     {
       title: "VERI-PHARM v2.0",
+      colors: "#ff8a00",
       desc: "VeriPharm application system is a sophisticated and robust and operation management system for small and midsized businesses.",
       points: [
         "Easy-2-Use",
@@ -32,7 +35,8 @@ const History1 = () => {
       year: "P2",
     },
     {
-      title: "VERI-EDU ERP v3.0",
+      title: "VERI-EDU SCHOOL v3.0",
+      colors: "#316bff",
       desc: "Our superb expertise on cutting edge technology has brought online educational ERP software solution, a totally planned tool that simplifies your task - just like the snap of a finger. A fully integrated system for kindergartens, e-governance, schools, colleges, distant learning centres, training centers, autonomous institutions and university.",
       points: [
         "Easy to Use",
@@ -49,7 +53,8 @@ const History1 = () => {
       year: "P3",
     },
     {
-      title: "VERITRA v2.0",
+      title: "VERI-TRA v2.0",
+      colors: "#911dd1",
       desc: "The travel agents can use our web application to fulfil the travel related needs of their customers. By integrating this travel api with your own software solution, our end to end travel management solution enables to offer unbeatable travel related services to your potential clients. We offer you a unproblematic base in the form of faultless travel related services which you can use to develop a strong customer segment for yourself.",
       points: [
         "Travel Ticket Booking",
@@ -68,7 +73,8 @@ const History1 = () => {
       year: "P4",
     },
     {
-      title: "ONLINE LOGISTICS MANAGEMENT TOOL v1.0",
+      title: "ONLINE LOGISTICS MANAGEMENT CRM v1.0",
+      colors: "#cd742f",
       desc: "A fully integrated, solution that provides Shippers and Customers, Consignees and their logistics companies with full reflectiveness through the supply chain from customer order through delivery of goods.",
       points: [
         "Integrated Order Management",
@@ -80,6 +86,19 @@ const History1 = () => {
       ],
       year: "P5",
     },
+    {
+      title: "VERI-EASY",
+      colors: "green",
+      desc: "Accounting and billing software that is simple to use, yet powerful enough to manage your business finances. Veri-Easy is designed for small and medium-sized businesses, freelancers, and entrepreneurs who need an easy way to keep track of their income and expenses.",
+      points: [
+        "Single Click Return Filing",
+        "POS for Fast Billing",
+        "Second Invoices via WhatsApp/Email",
+        "Multiple Payment Modes (UPI, Card, Cash, Bank Transfer)",
+        "Multiple User Access",
+      ],
+      year: "P6",
+    },
   ];
   return (
     <section className="tj-history-area section-bottom-gap">
@@ -88,17 +107,17 @@ const History1 = () => {
           <div className="col-12">
             <div className="timeline">
               {history?.length
-                ? history?.map(({ title, desc, points, year }, idx) => (
+                ? history?.map(({ title, colors, desc, points, year }, idx) => (
                     <div
                       key={idx}
                       className="timeline-inner wow fadeInUp"
                       data-wow-delay={`0.${idx + 1 + idx}s`}
                     >
-                      <div className="date">{year}</div>
+                      {/* <div className="date" style={{fontSize: "15px"}}>{year}</div> */}
                       <div className="content">
                         <div className="top">
                           <span>{modifyNumber(idx + 1)}.</span>
-                          <h4 className="title">{title}</h4>
+                          <h4 className="title" style={{color: colors}}>{title}</h4>
                           <p>{desc}</p>
                         </div>
 

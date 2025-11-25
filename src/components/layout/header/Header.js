@@ -86,7 +86,7 @@ const Header = ({
 										</Link>
 									) : (
 										<div className="header-search">
-											<button
+											{/* <button
 												className={`search  ${
 													isSearchOpen ? "search-hide" : ""
 												}`}
@@ -123,12 +123,12 @@ const Header = ({
 														strokeLinejoin="round"
 													/>
 												</svg>
-											</button>
+											</button> */}
 										</div>
 									)}
 
 									<div className="header-button">
-										<ButtonPrimary text={"Let’s Talk"} url={"/contact"} />
+										<ButtonPrimary style={{ backgroundColor: "orange" }} text={"Schedule Demo"} url={"/contact"} />
 									</div>
 									{headerType !== 3 && (
 										<div

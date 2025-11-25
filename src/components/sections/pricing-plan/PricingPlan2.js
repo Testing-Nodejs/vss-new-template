@@ -431,7 +431,7 @@ const PricingPlan2 = () => {
             <div className="content-wrap slidebar-stickiy">
               <div className="sec-heading style-4">
                 <span className="sub-title wow fadeInUp" data-wow-delay=".3s">
-                  <i className="tji-box"></i>VSS — Smart Solutions
+                  <i className="tji-box"></i>VSS — Automation Solutions
                 </span>
                 <h2 className="sec-title title-anim">Key Advantages.</h2>
               </div>

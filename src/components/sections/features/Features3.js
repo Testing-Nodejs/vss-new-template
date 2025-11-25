@@ -6,25 +6,29 @@ const Features3 = () => {
 		{
 			id: 1,
 			title: "Key Advantages & Reasons to Choose Veriteam",
-			icon: "fas fa-rocket",
+			icon: "fa fa-shield-alt",
+			color: "red",
 			desc: "Unmatched Expertise & Experience: A team of skilled professionals with deep industry knowledge and technical proficiency, ensuring top-notch solutions tailored to your business needs.",
 		},
 		{
 			id: 2,
 			title: "What We Do",
+			color: "#0ce380",
 			icon: "fas fa-cogs",
 			desc: "Veriteam Software Solutions delivers end-to-end digital services — from custom web design to enterprise-grade, scalable applications. We blend domain expertise with advanced technologies to build solutions that are efficient, secure, and aligned with your business goals.",
 		},
 		{
 			id: 3,
 			title: "Our Team",
+			color: "orange",
 			icon: "fas fa-users ",
 			desc: "A young, talented, and experienced group driven by confidence, competence, and care. We grow with our clients through long-term relationships, global exposure, and continuous innovation.",
 		},
 		{
 			id: 3,
 			title: "Why Veriteam Software?",
-			icon: "fas fa-bullseye",
+			color: "#ffd01a",
+			icon: "fa fa-check-circle",
 			desc: "We combine business understanding with technical excellence, offering solutions that are high-quality, cost-effective, scalable, and future-ready.",
 		},
 	];
@@ -85,15 +89,15 @@ const Features3 = () => {
 							className="countup-item style-2 wow fadeInUp"
 							data-wow-delay=".9s"
 							style={{
-								backgroundImage: "url('/images/choose/choose-img.webp')",
+								backgroundImage: "url('/images/choose/growth.jpg')",
 							}}
 						>
 							<span className="count-icon">
 								<i className="tji-growth"></i>
 							</span>
 							<div className="count-inner">
-								<span className="count-text">Faster Growth</span>
-								<FunfactSingle currentValue={8.5} symbol={"X"} />
+								<span className="count-text" style={{color: "#fff", fontSize: "30px"}}>Veriteam Software Solutions</span>
+								{/* <FunfactSingle currentValue={8.5} symbol={"X"} /> */}
 							</div>
 						</div>
 					</div>

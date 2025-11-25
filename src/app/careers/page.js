@@ -6,6 +6,7 @@ import HeroInner from "@/components/sections/hero/HeroInner";
 import BackToTop from "@/components/shared/others/BackToTop";
 import HeaderSpace from "@/components/shared/others/HeaderSpace";
 import ClientWrapper from "@/components/shared/wrappers/ClientWrapper";
+import Features2 from "@/components/sections/features/Features2";
 
 export default function Careers() {
 	return (
@@ -18,7 +19,7 @@ export default function Careers() {
 					<main>
 						<HeaderSpace />
 						<HeroInner title={"Careers"} text={"Careers"} />
-						<Careers1 />
+						<Features2 />
 						<Cta />
 					</main>
 					<Footer />

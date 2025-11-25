@@ -251,7 +251,7 @@ const Navbar = ({ headerType, isStickyHeader }) => {
             <Link href="/whyus">Why Us</Link>
           </li>
 		  <li className="">
-            <Link href="/Clients">Our Client</Link>
+            <Link href="/Clients">Our Clients</Link>
           </li>
 		  <li className="">
             <Link href="/portfolios">Portfolio</Link>

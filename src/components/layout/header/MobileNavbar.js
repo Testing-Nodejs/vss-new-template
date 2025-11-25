@@ -35,20 +35,23 @@ const MobileNavbar = () => {
               <li className="mean-last">
                 <Link href="/whyus">Why Us</Link>
               </li>
-              <li className="mean-last">
-                <Link href="/Clients">Our Client</Link>
+              {/* <li className="mean-last">
+                <Link href="/Clients">Our Clients</Link>
               </li>
               <li className="mean-last">
                 <Link href="/portfolios">Portfolio</Link>
-              </li>
-              <li className="mean-last">
+              </li> */}
+              {/* <li className="mean-last">
                 <Link href="/Products">Our Products</Link>
-              </li>
+              </li> */}
               <li className="mean-last">
-                <Link href="/services">Services</Link>
+                <Link href="/services">Core Services</Link>
               </li>
               <li className="mean-last">
                 <Link href="/contact">Contact Us</Link>
+              </li>
+              <li className="mean-last">
+                <Link href="/careers">Careers</Link>
               </li>
             </ul>
           </nav>

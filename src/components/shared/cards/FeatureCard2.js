@@ -10,7 +10,7 @@ const FeatureCard2 = ({ feature, idx }) => {
 				</div>
 				<h4 className="title">{title}</h4>
 				<p className="desc">{desc}</p>
-				<ButtonPrimary text={"Read More"} url={"/about"} isTextBtn={true} />
+				{/* <ButtonPrimary text={"Read More"} url={"/about"} isTextBtn={true} /> */}
 			</div>
 		</div>
 	);

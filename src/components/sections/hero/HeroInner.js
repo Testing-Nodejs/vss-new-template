@@ -4,8 +4,8 @@ import React from "react";
 const HeroInner = ({ title, text, breadcrums = [] }) => {
 	return (
 		<section
-			className="tj-page-header section-gap-x"
-			style={{ backgroundImage: `url('/images/bg/pheader-bg.webp')` }}
+			className="tj-page-header section-gap-x" 
+			style={{ backgroundImage: `url('/images/bg/Banner-cureer.png')` }}
 		>
 			<div className="container">
 				<div className="row">
@@ -19,7 +19,7 @@ const HeroInner = ({ title, text, breadcrums = [] }) => {
 								<span>
 									<Link href="/">Home</Link>
 								</span>
-								<span>
+								<span> 
 									<i className="tji-arrow-right"></i>
 								</span>
 								{breadcrums?.length
