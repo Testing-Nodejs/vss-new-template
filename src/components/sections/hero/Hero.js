@@ -11,7 +11,7 @@ const Hero = () => {
               <i className="tji-excellence"></i> Recognized for Excellence
             </span>
             <h1 className="banner-title title-anim">
-              <span>VSS — </span> Trusted Solutions for Modern Enterprises
+              <span>VSS — </span> Trusted Solutions for Software Automation
             </h1>
             <div className="banner-desc-area wow fadeInUp" data-wow-delay=".7s">
               <Link className="banner-link" href="/about">

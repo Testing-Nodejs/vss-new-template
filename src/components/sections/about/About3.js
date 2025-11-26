@@ -13,9 +13,9 @@ const About3 = ({ type }) => {
               <div className="about-img overflow-hidden">
                 <Image
                   data-speed=".8"
-                  src="/images/about/about-5.webp"
+                  src="/images/about/vss-about.jpg"
                   alt=""
-                  width={591}
+                  width={591} 
                   height={639}
                 />
               </div>

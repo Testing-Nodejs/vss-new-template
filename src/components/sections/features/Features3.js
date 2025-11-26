@@ -89,7 +89,7 @@ const Features3 = () => {
 							className="countup-item style-2 wow fadeInUp"
 							data-wow-delay=".9s"
 							style={{
-								backgroundImage: "url('/images/choose/growth.jpg')",
+								backgroundImage: "url('/images/choose/vss-grouth.png')",
 							}}
 						>
 							<span className="count-icon">

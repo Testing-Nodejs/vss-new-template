@@ -5,7 +5,7 @@ import styles from "./footer.module.css";
 const Footer = () => {
   return (
     <footer className="tj-footer-section footer-1 section-gap-x">
-      <div className="footer-main-area">
+      <div className="footer-main-area" style={{paddingBottom: "3%"}}>
         <div className="container">
           <div className="row justify-content-between">
             <div className="col-xl-3 col-lg-4 col-md-6">
@@ -37,7 +37,7 @@ const Footer = () => {
                 className="footer-widget widget-nav-menu wow fadeInUp"
                 data-wow-delay=".3s"
               >
-                <h5 className="title">Choose Us</h5>
+                <h5 className="title">Quick Links</h5>
                 <ul>
                   <li>
                     <Link href="/">Home</Link>
@@ -46,10 +46,13 @@ const Footer = () => {
                     <Link href="/whyus">Why Us</Link>
                   </li>
                   <li>
-                    <Link href="/Clients">Our Clients</Link>
+                    <Link href="/Products">Our Products</Link>
                   </li>
                   <li>
-                    <Link href="/Products">Our Products</Link>
+                    <Link href="/privacypolicy">Privacy Policy</Link>
+                  </li>
+                  <li>
+                    <Link href="/terms-and-conditions">Terms & Conditions</Link>
                   </li>
                 </ul>
               </div>
@@ -61,6 +64,9 @@ const Footer = () => {
               >
                 <h5 className="title">Know More</h5>
                 <ul>
+                  <li>
+                    <Link href="/Clients">Our Clients</Link>
+                  </li>
                   <li>
                     <Link href="/services">Services</Link>
                   </li>
@@ -125,11 +131,59 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className={styles.imageRow}>
-        <Image src="/images/logos/001.jpeg" alt="Img1" width={120} height={120} />
-        <Image src="/images/logos/002.jpeg" alt="Img2" width={120} height={120} />
-        <Image src="/images/logos/003.jpeg" alt="Img3" width={120} height={120} />
-        <Image src="/images/logos/004.jpeg" alt="Img4" width={120} height={120} />
+
+      <div className={styles.certificatesContainer}>
+        <div className={styles.certGrid}>
+          <div className={styles.certItem}>
+            <Image
+              src="/images/logos/001.jpeg"
+              alt="CMMI Level 3"
+              width={100}
+              height={100}   
+              className={styles.certLogo}
+            />
+            <p className={styles.certTitle}>CMMI Level 3 Certified</p>
+            <p className={styles.certDesc}>
+              Capability Maturity Model Integration
+            </p>
+          </div>
+
+          <div className={styles.certItem}>
+            <Image
+              src="/images/logos/002.jpeg"
+              alt="ISO 9001:2015"
+              width={100}
+              height={100}
+              className={styles.certLogo}
+            />
+            <p className={styles.certTitle}>ISO 9001:2015</p>
+            <p className={styles.certDesc}>Quality Management System</p>
+          </div>
+
+          <div className={styles.certItem}>
+            <Image
+              src="/images/logos/003.png"
+              alt="Ministry of Corporate Affairs"
+              width={100}
+              height={100}
+              className={styles.certLogo}
+            />
+            <p className={styles.certTitle}>Ministry of Corporate Affairs</p>
+            <p className={styles.certDesc}>Govt. of India Registered</p>
+          </div> 
+
+          <div className={styles.certItem}>
+            <Image
+              src="/images/logos/004.png"
+              alt="MSME"
+              width={100}
+              height={100}
+              className={styles.certLogo}
+            />
+            <p className={styles.certTitle}>MSME Registered</p>
+            <p className={styles.certDesc}>Micro, Small & Medium Enterprises</p>
+          </div>
+        </div>
       </div>
       <div className="tj-copyright-area">
         <div className="container">

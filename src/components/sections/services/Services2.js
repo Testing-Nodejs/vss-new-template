@@ -9,11 +9,11 @@ const Services2 = () => {
       id: 1,
       title: "Company Highlights",
       iconName: "tji-service-1",
-      desc: "With over 20+ years of industry expertise, Veriteam Software Solutions Private Limited stands as a trusted technology partner for businesses across the globe. Our commitment to innovation, quality, and customer success has enabled us to deliver impactful digital solutions across multiple domains.",
+      desc: "With over 23+ years of industry expertise, Veriteam Software Solutions Private Limited stands as a trusted technology partner for businesses across the globe. Our commitment to innovation, quality, and customer success has enabled us to deliver impactful digital solutions across multiple domains.",
     },
     {
       id: 2,
-      title: "20+ Years of Experience",
+      title: "23+ Years of Experience",
       iconName: "tji-service-2",
       desc: "A long-standing legacy of delivering reliable, scalable, and future-ready technology solutions. Our experience spans enterprise-level projects, custom platforms, and large-scale digital transformation initiatives.",
     },
@@ -54,7 +54,7 @@ const Services2 = () => {
                   Our Highlights
                 </span>
                 <h2 className="sec-title text-white text-anim">
-                  <span>VSS</span> — Where Technology Meets Purpose
+                  <span>VSS</span> — Where Technology Meets Business
                 </h2>
               </div>
               <div className="wow fadeInUp" data-wow-delay=".6s">

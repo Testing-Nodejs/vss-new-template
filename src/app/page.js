@@ -17,6 +17,7 @@ import Testimonials1 from "@/components/sections/testimonials/Testimonials1";
 import BackToTop from "@/components/shared/others/BackToTop";
 import HeaderSpace from "@/components/shared/others/HeaderSpace";
 import ClientWrapper from "@/components/shared/wrappers/ClientWrapper";
+import Team3 from "@/components/sections/teams/Team3";
 
 export default function Home() {
   return (
@@ -35,7 +36,7 @@ export default function Home() {
             {/* <Services1 /> */}
             {/* <Portfolios1 /> */}
             {/* <Funfact1 /> */}
-            <Testimonials1 />
+            <Team3 />
             <Faq2 type={1} />
             <Contact2 />
             {/* <Blogs1 /> */}

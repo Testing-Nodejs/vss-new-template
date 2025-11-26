@@ -38,8 +38,7 @@ const Features = ({ type }) => {
                 <div className="heading-wrap-content">
                   <div className="sec-heading">
                     <h2 className="sec-title title-anim">
-                      <span>VSS — </span> Delivering Clarity Through Smart IT
-                      Solutions
+                      <span>VSS — </span> Delivering Information Systems
                     </h2>
                   </div>
                   <div className="btn-wrap wow fadeInUp" data-wow-delay=".6s">

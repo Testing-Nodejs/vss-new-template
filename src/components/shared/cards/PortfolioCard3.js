@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 const PortfolioCard3 = ({ portfolio }) => {
-  const { title, img, desc, category } = portfolio ? portfolio : {};
+  const { title, img, desc, category, link } = portfolio ? portfolio : {};
   return (
     <div className="project-item">
       <div className="project-img">
@@ -10,15 +10,13 @@ const PortfolioCard3 = ({ portfolio }) => {
       </div>
       <div className="project-content">
         <span className="categories">
-          <Link href={`/portfolios/`}>{category}</Link>
+          <Link href={`https://vssitcompany.com/`} target="_blank">{category}</Link>
         </span>
         <div className="project-text">
           <h4 className="title">
-            <Link href={`/portfolios/`}>{title}</Link>
+            <Link target="_blank" href={link}>{title}</Link>
           </h4>
-          <Link className="project-btn" href={`/portfolios/`}>
-            <i className="tji-arrow-right-big"></i>
-          </Link>
+          <p style={{marginTop: "5%"}}>{desc}</p>
         </div>
       </div>
     </div>

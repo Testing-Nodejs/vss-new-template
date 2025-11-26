@@ -8,24 +8,28 @@ const Features2 = () => {
       title: "Graduates",
       icon: "fa fa-graduation-cap",
       desc: "Join our dynamic team and kickstart your career with exciting opportunities for growth and learning.",
+      color: "linear-gradient(180deg, #EF483F 0%, #F86E1A 100%)",
     },
     {
       id: 2,
       title: "Experienced Professionals",
-      icon: "fa fa-certificate",
+      icon: "fa fa-briefcase",
       desc: "We value your expertise and offer challenging roles that leverage your skills to drive innovation and success.",
+      color: "linear-gradient(180deg, #65277E 0%, #9B59B6 100%)",
     },
     {
       id: 3,
       title: "Engineering Professionals",
       icon: "fa fa-tools",
       desc: "We are looking for talented engineers to join our team and contribute to cutting-edge projects in a collaborative environment.",
+      color: "linear-gradient(180deg, #20C364 0%, #15B99E 100%)",
     },
     {
       id: 3,
       title: "Leadership / Managerial",
       icon: "fa fa-users-cog",
       desc: "We seek visionary leaders to guide our teams towards excellence and foster a culture of innovation and growth.",
+      color: "linear-gradient(180deg, #024288 0%, #006ADC 100%)",
     },
   ];
   return (
@@ -50,24 +54,32 @@ const Features2 = () => {
               ))
             : ""}
         </div>
-        <div className="row" style={{marginTop: "5%"}}>
-          <div className="col-lg-3"></div>
-          <div className="col-lg-6">
+        <div className="row" style={{ marginTop: "5%" }}>
+          {/* <div className="col-lg-3"></div> */}
+          <div className="col-lg-12">
             <div className="contact-form wow fadeInUp" data-wow-delay=".1s">
               <h3 className="title">
                 Feel Free to Get in Touch or Visit our Location.
               </h3>
               <form id="contact-form">
                 <div className="row">
-                  <div className="col-sm-6">
+                  <div className="col-sm-4">
                     <div className="form-input">
                       <input type="text" name="cfName" />
                       <label className="cf-label">
-                        Full Name <span>*</span>
+                        First Name <span>*</span>
                       </label>
                     </div>
                   </div>
-                  <div className="col-sm-6">
+                  <div className="col-sm-4">
+                    <div className="form-input">
+                      <input type="text" name="cfName" />
+                      <label className="cf-label">
+                        Last Name <span>*</span>
+                      </label>
+                    </div>
+                  </div>
+                  <div className="col-sm-4">
                     <div className="form-input">
                       <input type="email" name="cfEmail" />
                       <label className="cf-label">
@@ -75,7 +87,7 @@ const Features2 = () => {
                       </label>
                     </div>
                   </div>
-                  <div className="col-sm-6">
+                  <div className="col-sm-4">
                     <div className="form-input">
                       <input type="tel" name="cfPhone" />
                       <label className="cf-label">
@@ -83,23 +95,31 @@ const Features2 = () => {
                       </label>
                     </div>
                   </div>
-                  <div className="col-sm-6">
+                  <div className="col-sm-4">
+                    <div className="form-input">
+                      <input type="text" name="cfCity" />
+                      <label className="cf-label">
+                        City <span>*</span>
+                      </label>
+                    </div>
+                  </div>
+                  <div className="col-sm-4">
                     <div className="form-input">
                       <div className="tj-nice-select-box">
                         <div className="tj-select">
                           <ReactNiceSelect
                             selectedIndex={0}
                             options={[
-                              { value: "0", optionName: "Chose a option" },
-                              { value: "1", optionName: "Business Strategy" },
-                              { value: "2", optionName: "Customer Experience" },
+                              { value: "0", optionName: "Chose a Position" },
+                              { value: "1", optionName: "Developer" },
+                              { value: "2", optionName: "Senior Developer" },
                               {
                                 value: "3",
-                                optionName: "Sustainability and ESG",
+                                optionName: "BPO & Support",
                               },
                               {
                                 value: "4",
-                                optionName: "Training and Development",
+                                optionName: "Technical Administrator",
                               },
                               {
                                 value: "5",
@@ -116,11 +136,48 @@ const Features2 = () => {
                       </div>
                     </div>
                   </div>
+                  <div className="col-sm-4">
+                    <div className="form-input">
+                      <div className="tj-nice-select-box">
+                        <div className="tj-select">
+                          <ReactNiceSelect
+                            selectedIndex={0}
+                            options={[
+                              { value: "0", optionName: "Chose a Education" },
+                              { value: "1", optionName: "Diploma" },
+                              { value: "2", optionName: "Bachelor Degree" },
+                              {
+                                value: "3",
+                                optionName: "Master Degree",
+                              },
+                              {
+                                value: "4",
+                                optionName: "PhD",
+                              },
+                              {
+                                value: "5",
+                                optionName: "Others",
+                              },
+                            ]}
+                            // getSelectedOption={handleSelect}
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="col-sm-4">
+                    <div className="form-input">
+                      <input type="file" name="cfResume" />
+                      <label style={{marginTop: "-2em"}} className="cf-label">
+                        Resume <span>*</span>
+                      </label>
+                    </div>
+                  </div>
                   <div className="col-sm-12">
                     <div className="form-input message-input">
                       <textarea name="cfMessage" id="message"></textarea>
                       <label className="cf-label">
-                        Type message <span>*</span>
+                        About / Short Profile <span>*</span>
                       </label>
                     </div>
                   </div>
@@ -138,7 +195,7 @@ const Features2 = () => {
               </form>
             </div>
           </div>
-          <div className="col-lg-3"></div>
+          {/* <div className="col-lg-3"></div> */}
         </div>
       </div>
     </section>
