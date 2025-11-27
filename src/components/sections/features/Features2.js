@@ -1,5 +1,8 @@
+"use client";
 import FeatureCard2 from "@/components/shared/cards/FeatureCard2";
 import ReactNiceSelect from "@/components/shared/Inputs/ReactNiceSelect";
+
+import { useState } from "react";
 
 const Features2 = () => {
   const features = [
@@ -32,6 +35,32 @@ const Features2 = () => {
       color: "linear-gradient(180deg, #024288 0%, #006ADC 100%)",
     },
   ];
+
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
+  async function handleSubmit(e) {
+    e.preventDefault();
+    setIsSubmitting(true);
+
+    const formData = new FormData(e.target);
+
+    const res = await fetch("/api/send-mail", {
+      method: "POST",
+      body: formData,
+    });
+
+    const data = await res.json();
+
+    setIsSubmitting(false);
+
+    if (data.success) {
+      alert("Your application has been submitted successfully!");
+      window.location.href = "/careers"; // redirect
+    } else {
+      alert("Failed to submit application.");
+    }
+  }
+
   return (
     <section id="choose" className="tj-choose-section section-gap">
       <div className="container">
@@ -61,134 +90,101 @@ const Features2 = () => {
               <h3 className="title">
                 Feel Free to Get in Touch or Visit our Location.
               </h3>
-              <form id="contact-form">
-                <div className="row">
-                  <div className="col-sm-4">
-                    <div className="form-input">
-                      <input type="text" name="cfName" />
-                      <label className="cf-label">
-                        First Name <span>*</span>
-                      </label>
-                    </div>
+              <form
+                onSubmit={handleSubmit}
+                encType="multipart/form-data"
+                className="career-form"
+              >
+                <div className="form-row">
+                  <div className="form-group">
+                    <label>
+                      First Name <span>*</span>
+                    </label>
+                    <input type="text" name="cfFirstName" required />
                   </div>
-                  <div className="col-sm-4">
-                    <div className="form-input">
-                      <input type="text" name="cfName" />
-                      <label className="cf-label">
-                        Last Name <span>*</span>
-                      </label>
-                    </div>
+
+                  <div className="form-group">
+                    <label>
+                      Last Name <span>*</span>
+                    </label>
+                    <input type="text" name="cfLastName" required />
+                    <input type="text" defaultValue="career" name="cftype" required hidden />
                   </div>
-                  <div className="col-sm-4">
-                    <div className="form-input">
-                      <input type="email" name="cfEmail" />
-                      <label className="cf-label">
-                        Email Address <span>*</span>
-                      </label>
-                    </div>
+
+                  <div className="form-group">
+                    <label>
+                      Email <span>*</span>
+                    </label>
+                    <input type="email" name="cfEmail" required />
                   </div>
-                  <div className="col-sm-4">
-                    <div className="form-input">
-                      <input type="tel" name="cfPhone" />
-                      <label className="cf-label">
-                        Phone number <span>*</span>
-                      </label>
-                    </div>
+
+                  <div className="form-group">
+                    <label>
+                      Phone Number <span>*</span>
+                    </label>
+                    <input type="tel" name="cfPhone" required />
                   </div>
-                  <div className="col-sm-4">
-                    <div className="form-input">
-                      <input type="text" name="cfCity" />
-                      <label className="cf-label">
-                        City <span>*</span>
-                      </label>
-                    </div>
+
+                  <div className="form-group">
+                    <label>
+                      City <span>*</span>
+                    </label>
+                    <input type="text" name="cfCity" required />
                   </div>
-                  <div className="col-sm-4">
-                    <div className="form-input">
-                      <div className="tj-nice-select-box">
-                        <div className="tj-select">
-                          <ReactNiceSelect
-                            selectedIndex={0}
-                            options={[
-                              { value: "0", optionName: "Chose a Position" },
-                              { value: "1", optionName: "Developer" },
-                              { value: "2", optionName: "Senior Developer" },
-                              {
-                                value: "3",
-                                optionName: "BPO & Support",
-                              },
-                              {
-                                value: "4",
-                                optionName: "Technical Administrator",
-                              },
-                              {
-                                value: "5",
-                                optionName: "IT Support & Maintenance",
-                              },
-                              {
-                                value: "6",
-                                optionName: "Marketing Strategy",
-                              },
-                            ]}
-                            // getSelectedOption={handleSelect}
-                          />
-                        </div>
-                      </div>
-                    </div>
+
+                  {/* Updated Basic Select Dropdown */}
+                  <div className="form-group">
+                    <label>
+                      Position Applied <span>*</span>
+                    </label>
+                    <select name="cfPosition" required>
+                      <option value="">Choose a Position</option>
+                      <option value="Developer">Developer</option>
+                      <option value="Senior Developer">Senior Developer</option>
+                      <option value="BPO & Support">BPO & Support</option>
+                      <option value="Technical Administrator">
+                        Technical Administrator
+                      </option>
+                      <option value="IT Support & Maintenance">
+                        IT Support & Maintenance
+                      </option>
+                      <option value="Marketing Strategy">
+                        Marketing Strategy
+                      </option>
+                    </select>
                   </div>
-                  <div className="col-sm-4">
-                    <div className="form-input">
-                      <div className="tj-nice-select-box">
-                        <div className="tj-select">
-                          <ReactNiceSelect
-                            selectedIndex={0}
-                            options={[
-                              { value: "0", optionName: "Chose a Education" },
-                              { value: "1", optionName: "Diploma" },
-                              { value: "2", optionName: "Bachelor Degree" },
-                              {
-                                value: "3",
-                                optionName: "Master Degree",
-                              },
-                              {
-                                value: "4",
-                                optionName: "PhD",
-                              },
-                              {
-                                value: "5",
-                                optionName: "Others",
-                              },
-                            ]}
-                            // getSelectedOption={handleSelect}
-                          />
-                        </div>
-                      </div>
-                    </div>
+
+                  <div className="form-group">
+                    <label>
+                      Education <span>*</span>
+                    </label>
+                    <select name="cfEducation" required>
+                      <option value="">Choose Education</option>
+                      <option value="Diploma">Diploma</option>
+                      <option value="Bachelor Degree">Bachelor Degree</option>
+                      <option value="Master Degree">Master Degree</option>
+                      <option value="PhD">PhD</option>
+                      <option value="Others">Others</option>
+                    </select>
                   </div>
-                  <div className="col-sm-4">
-                    <div className="form-input">
-                      <input type="file" name="cfResume" />
-                      <label style={{marginTop: "-2em"}} className="cf-label">
-                        Resume <span>*</span>
-                      </label>
-                    </div>
+
+                  <div className="form-group">
+                    <label>
+                      Resume <span>*</span>
+                    </label>
+                    <input type="file" name="cfResume" required />
                   </div>
-                  <div className="col-sm-12">
-                    <div className="form-input message-input">
-                      <textarea name="cfMessage" id="message"></textarea>
-                      <label className="cf-label">
-                        About / Short Profile <span>*</span>
-                      </label>
-                    </div>
+
+                  <div className="form-group full">
+                    <label>
+                      About / Short Profile <span>*</span>
+                    </label>
+                    <textarea name="cfMessage" rows="5" required></textarea>
                   </div>
+
                   <div className="submit-btn">
-                    <button className="tj-primary-btn" type="submit">
-                      <span className="btn-text">
-                        <span>Submit Now</span>
-                      </span>
-                      <span className="btn-icon">
-                        <i className="tji-arrow-right-long"></i>
-                      </span>
+                    <button type="submit" className="tj-primary-btn">
+                      {isSubmitting ? "Submitting..." : "Submit Now"}
                     </button>
                   </div>
                 </div>

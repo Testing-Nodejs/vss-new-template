@@ -79,6 +79,14 @@ const Team3 = () => {
             >
               <h3>Government Work</h3>
             </div>
+             <div
+              className="industry-card"
+              style={{
+                backgroundImage: "url('/images/industry/Agricultural.png')",
+              }}
+            >
+              <h3>Agricultural</h3>
+            </div>
           </div>
         </div>
       </div>
