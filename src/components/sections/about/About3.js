@@ -13,10 +13,10 @@ const About3 = ({ type }) => {
               <div className="about-img overflow-hidden">
                 <Image
                   data-speed=".8"
-                  src="/images/about/vss-about.jpg"
+                  src="/images/about/vss-about.png"
                   alt=""
                   width={591} 
-                  height={639}
+                  height={639} 
                 />
               </div>
               <div className={`box-area ${type === 2 ? "style-2" : ""}`}>
