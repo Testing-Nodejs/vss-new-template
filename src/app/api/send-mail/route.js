@@ -67,7 +67,7 @@ export async function POST(req) {
     // Email Content
     await transporter.sendMail({
       from: "testing.vss12@gmail.com",
-      to: "jafar.pasha@vssitcompany.in",
+      to: "admin@vssitcompany.com",
       subject: type === "career" ? "New Career Enquiry" : "New Contact Enquiry",
       html: html,
       attachments: resumeAttachment ? [resumeAttachment] : [],
