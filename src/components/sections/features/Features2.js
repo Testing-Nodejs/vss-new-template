@@ -87,9 +87,7 @@ const Features2 = () => {
           {/* <div className="col-lg-3"></div> */}
           <div className="col-lg-12">
             <div className="contact-form wow fadeInUp" data-wow-delay=".1s">
-              <h3 className="title">
-                Feel Free to Get in Touch or Visit our Location.
-              </h3>
+              <h3 className="title">Apply Now...</h3>
               <form
                 onSubmit={handleSubmit}
                 encType="multipart/form-data"
@@ -108,7 +106,13 @@ const Features2 = () => {
                       Last Name <span>*</span>
                     </label>
                     <input type="text" name="cfLastName" required />
-                    <input type="text" defaultValue="career" name="cftype" required hidden />
+                    <input
+                      type="text"
+                      defaultValue="career"
+                      name="cftype"
+                      required
+                      hidden
+                    />
                   </div>
 
                   <div className="form-group">
@@ -139,17 +143,21 @@ const Features2 = () => {
                     </label>
                     <select name="cfPosition" required>
                       <option value="">Choose a Position</option>
-                      <option value="Developer">Developer</option>
-                      <option value="Senior Developer">Senior Developer</option>
-                      <option value="BPO & Support">BPO & Support</option>
-                      <option value="Technical Administrator">
-                        Technical Administrator
+                      <option value="Programmer">Programmer</option>
+                      <option value="Software Engineering">
+                        Software Engineering
                       </option>
-                      <option value="IT Support & Maintenance">
-                        IT Support & Maintenance
+                      <option value="BPO & Support Executive">
+                        BPO & Support Executive
                       </option>
-                      <option value="Marketing Strategy">
-                        Marketing Strategy
+                      <option value="Sales & Marketing Executive">
+                        Sales & Marketing Executive
+                      </option>
+                      <option value="Mobile APP Developer">
+                        Mobile APP Developer
+                      </option>
+                      <option value="Customer Service Engineering">
+                        Customer Service Engineering
                       </option>
                     </select>
                   </div>

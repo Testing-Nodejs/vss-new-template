@@ -89,11 +89,11 @@
   },
   {
     "id": 11,
-    "name": "Annannya",
-    "desig": "Annannya",
-    "img": "/images/team/noimage.jpg",
-    "imgLarge": "/images/team/noimage.jpg",
-    "link": "https://www.annannya.com/login.aspx?cmpy=1"
+    "name": "AT&S",
+    "desig": "AT&S",
+    "img": "/images/team/AT_S_Logo.png",
+    "imgLarge": "/images/team/AT_S_Logo.png",
+    "link": "https://ats.net/en/"
   },
   {
     "id": 12,
@@ -107,8 +107,24 @@
     "id": 13,
     "name": "The Kings Kastle",
     "desig": "The Kings Kastle",
-    "img": "/images/team/noimage.jpg",
-    "imgLarge": "/images/team/noimage.jpg",
+    "img": "/images/team/kings-kastle.png",
+    "imgLarge": "/images/team/kings-kastle.png",
     "link": "https://thekingskastle.com/"
+  },
+  {
+    "id": 13,
+    "name": "Hindustan Unilever Limited",
+    "desig": "Hindustan Unilever Limited",
+    "img": "/images/team/hul.png",
+    "imgLarge": "/images/team/hul.png",
+    "link": "https://www.hul.co.in/"
+  },
+  {
+    "id": 14,
+    "name": "Nestle India",
+    "desig": "Nestle India",
+    "img": "/images/team/nestle.png",
+    "imgLarge": "/images/team/nestle.png",
+    "link": "https://www.nestle.in/"
   }
 ]

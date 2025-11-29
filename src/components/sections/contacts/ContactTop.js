@@ -43,17 +43,26 @@ const ContactTop = () => {
               <h3 className="contact-title">Email us</h3>
               <ul className="contact-list">
                 <li>
-                  <Link href="mailto:info@vssitcompany.com">
+                  <Link
+                    href="mailto:info@vssitcompany.com"
+                    title="Send an email for Information Enquiry"
+                  >
                     info@vssitcompany.com
                   </Link>
                 </li>
                 <li>
-                  <Link href="mailto:sales@vssitcompany.com">
+                  <Link
+                    href="mailto:sales@vssitcompany.com"
+                    title="Send an email for Sales Enquiry"
+                  >
                     sales@vssitcompany.com
                   </Link>
                 </li>
                 <li>
-                  <Link href="mailto:admin@vssitcompany.com">
+                  <Link
+                    href="mailto:admin@vssitcompany.com"
+                    title="Send an email for Admin Enquiry"
+                  >
                     admin@vssitcompany.com
                   </Link>
                 </li>
@@ -74,7 +83,7 @@ const ContactTop = () => {
                   <Link href="tel:919986019715">+91 9986019715</Link>
                 </li>
                 <li>
-                  <Link href="tel:919845468715">+91 9845468715</Link>
+                  <Link href="tel:919741842411">+91 9741842411</Link>
                 </li>
                 <li>
                   <Link href="tel:919880796233">+91 9880796233</Link>
@@ -94,7 +103,12 @@ const ContactTop = () => {
               <ul className="contact-list">
                 <li>Locate us on the map</li>
                 <li className="active">
-                  <Link href="/contact">Click Here</Link>
+                  <Link
+                    href="https://maps.app.goo.gl/ZLfs7tQSkExU6FHT6"
+                    target="_blank"
+                  >
+                    Click Here
+                  </Link>
                 </li>
               </ul>
             </div>
